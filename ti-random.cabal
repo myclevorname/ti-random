@@ -1,0 +1,37 @@
+cabal-version:      3.0
+name:               ti-random
+
+-- The package version.
+-- See the Haskell package versioning policy (PVP) for standards
+-- guiding when and how versions should be incremented.
+-- https://pvp.haskell.org
+-- PVP summary:     +-+------- breaking API changes
+--                  | | +----- non-breaking API additions
+--                  | | | +--- code changes with no API change
+version:            0.1.0.0
+synopsis:           Implemenation of the TI-83+ RNG
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             Sam Connelly
+maintainer:         myclevorname@gmail.com
+category:           Data
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+-- Extra source files to be distributed with the package, such as examples, or a tutorial module.
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  Data.Random.TI
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base
+    hs-source-dirs:   src
+    default-language: Haskell2010
