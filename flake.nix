@@ -13,7 +13,7 @@
         packages.ti-random = haskellPackages.mkDerivation {
           src = self;
           pname = "ti-random";
-          version = "0.1.0.1";
+          version = "0.1.0.2";
           license = lib.licenses.mit;
           isLibrary = true;
           isExecutable = false;

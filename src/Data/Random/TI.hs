@@ -93,4 +93,4 @@ randIntNoRep minValue maxValue (Just a) seed = loop [] a seed False
             Nothing
 
 dropElem :: (Eq a) => a -> [a] -> [a]
-dropElem = filter . (==)
+dropElem = filter . (/=)
